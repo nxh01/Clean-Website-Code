@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Playfair-Bold";
+  src: url("/src/assets/font/PlayfairDisplay-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair-Medium";
+  src: url("/src/assets/font/PlayfairDisplay-medium.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair-Regular";
+  src: url("/src/assets/font/PlayfairDisplay-regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+// Fonts Variables
+$font-bold: "Playfair-Bold"; // Font weight 700
+$font-medium: "Playfair-Medium"; // Font weight 500
+$font-regular: "Playfair-regular"; // Font weight 400
+
+// Colors
+$main-text-color: #ad9e80;
+$main-background-color: #f2eee4;
+$white-color: #ffffff;
+$gray-color: #484848;
+$light-gray-color: #30342b;
+
+// Variables others
+$xl-font-size: 90px;
+$l-font-size: 60px;
+$m-font-size: 24px;
+$s-font-size: 18px;
+$xs-font-size: 14px;
