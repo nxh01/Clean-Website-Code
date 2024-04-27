@@ -8,7 +8,7 @@ function Hero() {
             <HeroImage />
             <div className="hero_section_wrapper">
                 <h1>Your next adventure...</h1>
-                <p>Discover your next journey with us let`s embark together where adventures await. Explore enchanting places below.</p>
+                <p>Discover your next journey with us let&#39;s embark together where adventures await. Explore enchanting places below.</p>
                 <Button
                     text={'See more'}
                 />
