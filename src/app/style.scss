@@ -1,12 +1,21 @@
-@import "../components/scss/abstracts/font";
+@import "../scss/abstracts/font";
 
-@import "../components/scss/base/base";
-@import "../components/scss/base/typography";
+@import "../scss/base/base";
+@import "../scss/base/typography";
 
-@import "../components/scss/components/customImage";
-@import "../components/scss/components/heroImage";
-@import "../components/scss/components/button";
+@import "../scss/components/customImage";
+@import "../scss/components/heroImage";
+@import "../scss/components/button";
+@import "../scss/components/splitters";
+@import "../scss/components/questionDropdown";
+@import "../scss/components/newsletterInput";
 
-@import "../components/scss/layout/navbar";
+@import "../scss/layout/navbar";
+@import "../scss/layout/footer";
 
-@import "../components/scss/pages/heroSection";
+@import "../scss/pages/heroSection";
+@import "../scss/pages/aboutSection";
+@import "../scss/pages/exploreSection";
+@import "../scss/pages/journalSections";
+@import "../scss/pages/capturesSection";
+@import "../scss/pages/questionsSection";

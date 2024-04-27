@@ -1,0 +1,57 @@
+a,
+a:visited,
+a:focus,
+a:active,
+a:checked,
+li,
+ul,
+ol {
+  text-decoration: none;
+  color: $main-text-color;
+  list-style-type: none;
+  list-style: none;
+  margin: 0;
+}
+
+h1 {
+  color: $gray-color;
+  font: normal normal 400 $l-font-size $font-regular;
+  margin: 0;
+}
+
+h2 {
+  color: $main-text-color;
+  font: normal normal 400 $m-font-size $font-regular;
+  margin: 0;
+}
+
+h3 {
+  color: $main-text-color;
+  font: normal normal 400 $s-font-size $font-regular;
+  margin: 0;
+}
+
+h4 {
+  color: $gray-color;
+  font: normal normal 500 $s-font-size $font-medium;
+  margin: 0;
+}
+
+h5 {
+  color: $main-text-color;
+  font: normal normal 400 $xs-font-size $font-medium;
+  margin: 0;
+}
+
+
+p {
+  font: normal normal 500 $s-font-size $font-regular;
+  color: $main-text-color;
+  margin: 0;
+}
+
+.custom_title {
+  color: $gray-color;
+  font: normal normal 400 $l-font-size $font-regular;
+  margin: 0;
+}

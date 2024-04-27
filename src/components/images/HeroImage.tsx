@@ -6,9 +6,9 @@ function HeroImage() {
         <div className="hero_image">
             <Image
                 src={HeroImageSrc}
-                width={300}
-                height={300}
                 alt={'Hero image'}
+                fill={true}
+                priority={true}
             />
         </div>
     );

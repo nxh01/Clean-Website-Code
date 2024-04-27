@@ -1,0 +1,49 @@
+.question_dropdown {
+    max-width: 990px;
+    width: 100%;
+    display: flex;
+    padding: 30px 10px;
+    cursor: pointer;
+    border-radius: 0px;
+    flex-direction: column;
+    overflow: hidden;
+
+    &:hover {
+        background-color: rgba($color: #fff, $alpha: 0.05);
+    }
+
+    .question_dropdown_title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        height: 100%;
+        min-height: 85px;
+
+        p {
+            color: $white-color;
+        }
+    }
+
+    .question_dropdown_description {
+        p {
+            color: $white-color;
+
+        }
+    }
+
+
+    &.border_top {
+        border-top: solid 1px $white-color;
+    }
+
+    &.border_bottom {
+        border-bottom: solid 1px $white-color;
+
+    }
+
+    &.border_both {
+        border-bottom: solid 1px $white-color;
+        border-top: solid 1px $white-color;
+    }
+}
