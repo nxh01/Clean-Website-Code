@@ -24,7 +24,7 @@ function Questions() {
                         gap: '35px',
                     }}>
                         <Button
-                            text={` E-Mail`}
+                            text={`E-Mail`}
                             style={{
                                 backgroundColor: '#fff',
                                 color: '#AD9E80',
