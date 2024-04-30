@@ -18,10 +18,17 @@
         justify-content: space-between;
         align-items: center;
         gap: 20px;
+        @media screen and (max-width: $medium) {
+            flex-direction: column;
+            gap: 40px;
+            .about_video{
+
+            }
+        }
     }
 
     // Image content Style
-    &_about_video {
+    .about_video {
         position: relative;
         width: 100%;
         height: 557px;
@@ -43,6 +50,10 @@
 
         h1 {
             margin-bottom: 30px;
+        }
+        @media screen and (max-width: $medium) {
+            max-width: 850px;
+
         }
     }
 

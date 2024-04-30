@@ -1,13 +1,13 @@
 'use client'
-import { Swiper, SwiperSlide } from 'swiper/react';
-
+import {useMediaQuery} from 'react-responsive'
+import {Swiper, SwiperSlide} from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 // import required modules
-import { Navigation } from 'swiper/modules';
+import {Navigation} from 'swiper/modules';
 
 import CustomImage from '../images/CustomImage';
 
@@ -17,13 +17,15 @@ interface props {
 }
 
 function ExploreSlider(props: props) {
-    const { images, style } = props
+    const {images, style} = props
+    const isMediumDevice = useMediaQuery({query: '(max-width: 1400px)'})
+    const isSmallDevice = useMediaQuery({query: '(max-width: 900px)'})
 
     return (
         <div className="explore_slider" style={style}>
             <Swiper
-                slidesPerView={4}
-                centeredSlides={false}
+                slidesPerView={isSmallDevice ? 1 : isMediumDevice ? 2 : 4}
+                centeredSlides={isSmallDevice}
                 spaceBetween={10}
                 grabCursor={true}
                 pagination={{
@@ -50,7 +52,7 @@ function ExploreSlider(props: props) {
                         )
                     })
                 }
-                <span className='explore_line' />
+                <span className='explore_line'/>
             </Swiper>
         </div>
     );
