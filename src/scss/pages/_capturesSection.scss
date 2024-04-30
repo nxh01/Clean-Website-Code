@@ -6,6 +6,10 @@
     align-items: center;
     justify-content: center;
 
+    @media screen and (max-width:$small) {
+        padding: 0px 15px;
+    }
+
     &_wrapper {
         width: 100%;
         display: flex;
@@ -21,6 +25,10 @@
             justify-content: center;
             gap: 15px;
             grid-template-columns: repeat(6, 1fr);
+
+            @media screen and (max-width: $small) {
+                grid-template-columns: unset;
+            }
 
             .column_span {
                 grid-column: span 2;

@@ -16,13 +16,7 @@ function Questions() {
                         style={{ color: '#FFFFFF' }}
                     />
                     <p>Quis autem vel eum iure reprehenderit.</p>
-                    <div style={{
-                        width: '100%',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'flex-start',
-                        gap: '35px',
-                    }}>
+                    <div className="button_container">
                         <Button
                             text={`E-Mail`}
                             style={{

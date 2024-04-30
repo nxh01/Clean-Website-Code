@@ -27,6 +27,7 @@ function CustomImage(props: props) {
         children,
         style,
     } = props
+    console.log(width);
 
     return (
         <div

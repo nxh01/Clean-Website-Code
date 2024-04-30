@@ -6,6 +6,10 @@
   align-items: center;
   justify-content: center;
 
+  @media screen and (max-width:$small) {
+    padding: 90px 15px;
+  }
+
   &_wrapper {
     width: 100%;
     display: flex;
@@ -21,12 +25,14 @@
     align-items: center;
     justify-content: space-between;
     gap: 30px;
+
     @media screen and (max-width: $medium) {
       align-items: flex-start;
       flex-direction: column-reverse;
+
       div {
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 10px !important;
       }
     }
   }
@@ -40,6 +46,10 @@
       width: 100%;
 
       .explore_swiper {
+        @media screen and (max-width:$small) {
+          overflow: hidden !important;
+        }
+
         overflow: visible !important;
 
         .explore_line {

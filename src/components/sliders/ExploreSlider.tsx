@@ -1,15 +1,16 @@
 'use client'
-import {useMediaQuery} from 'react-responsive'
-import {Swiper, SwiperSlide} from 'swiper/react';
+import { useMediaQuery } from 'react-responsive'
+import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 // import required modules
-import {Navigation} from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 
 import CustomImage from '../images/CustomImage';
+import { useEffect, useState } from 'react';
 
 interface props {
     images: any,
@@ -17,9 +18,18 @@ interface props {
 }
 
 function ExploreSlider(props: props) {
-    const {images, style} = props
-    const isMediumDevice = useMediaQuery({query: '(max-width: 1400px)'})
-    const isSmallDevice = useMediaQuery({query: '(max-width: 900px)'})
+    const { images, style } = props
+    const [imageSize, setImageSize] = useState<string>('408px')
+    const isMediumDevice = useMediaQuery({ query: '(max-width: 1400px)' })
+    const isSmallDevice = useMediaQuery({ query: '(max-width: 900px)' })
+
+    console.log(imageSize);
+    useEffect(() => {
+        if (isSmallDevice) {
+            setImageSize('100%')
+        }
+    }, [isSmallDevice])
+
 
     return (
         <div className="explore_slider" style={style}>
@@ -40,7 +50,7 @@ function ExploreSlider(props: props) {
                         return (
                             <SwiperSlide key={index}>
                                 <CustomImage
-                                    width={"408px"}
+                                    width={imageSize}
                                     height={"552px"}
                                     src={item.src}
                                     alt={'image'}
@@ -52,7 +62,7 @@ function ExploreSlider(props: props) {
                         )
                     })
                 }
-                <span className='explore_line'/>
+                <span className='explore_line' />
             </Swiper>
         </div>
     );

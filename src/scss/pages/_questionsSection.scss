@@ -9,6 +9,10 @@
     justify-content: center;
     background-color: $main-text-color;
 
+    @media screen and (max-width:$small) {
+        margin: 120px 0px;
+    }
+
     &_wrapper {
         width: 100%;
         padding: 100px 0px;
@@ -16,6 +20,13 @@
         gap: 200px;
         justify-content: space-between;
         align-items: center;
+
+        @media screen and (max-width:$medium) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 50px;
+        }
 
         .questions_title {
             max-width: 443px;
@@ -25,6 +36,22 @@
             justify-content: center;
             flex-direction: column;
             gap: 45px;
+
+            .button_container {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 35px;
+
+                @media screen and (max-width:$small) {
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+
+            }
 
             p {
                 color: $white-color

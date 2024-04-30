@@ -6,6 +6,10 @@
     align-items: center;
     justify-content: center;
 
+    @media screen and (max-width:$small) {
+        padding: 90px 15px;
+    }
+
     p,
     h1 {
         color: $gray-color;
@@ -18,12 +22,12 @@
         justify-content: space-between;
         align-items: center;
         gap: 20px;
+
         @media screen and (max-width: $medium) {
             flex-direction: column;
             gap: 40px;
-            .about_video{
 
-            }
+            .about_video {}
         }
     }
 
@@ -51,6 +55,7 @@
         h1 {
             margin-bottom: 30px;
         }
+
         @media screen and (max-width: $medium) {
             max-width: 850px;
 
